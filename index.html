@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="menu-container">
+    </div>
+    <div class="fxid">
+        <div id="filters">
+            <input type="text" id="search" placeholder="Search">
+            <select id="category-filter">
+                <option value="">All Categories</option>
+            </select>
+            <input type="number" id="price-filter" placeholder="Max Price">
+        </div>
+        <div id="new-dish-form" >
+            <form id="add-dish-form">
+                <input type="text" id="name" placeholder="Dish Name" required>
+                <input type="text" id="category" placeholder="Category" required>
+                <input type="text" id="image" placeholder="Image URL" required>
+                <input type="number" id="price" placeholder="Price" required>
+                <textarea id="ingredients" placeholder="Ingredients" required></textarea>
+                <button type="button" id="new-dish-button">Add Dish</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
